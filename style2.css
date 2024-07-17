@@ -1,0 +1,139 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+nav {
+    background-color: black;
+    color: whitesmoke;
+    padding: 20px 50px;
+
+}
+
+.navTop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    background-color: gray;
+    padding: 10px 20px;
+    border-radius: 15px 20px;
+
+}
+
+.searchIcon {
+    height: 0;
+    width: 0;
+
+}
+
+.searchInput {
+    border: none;
+    background-color: transparent;
+
+
+}
+
+.searchInput::placeholder {
+    color: lightblue;
+}
+
+.limitedOffer {
+    font-size: 20px;
+    border-bottom: 2px;
+    color: solid green;
+    cursor: pointer;
+}
+
+.navBottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menItem {
+    margin-right: 90px;
+    cursor: pointer;
+    color: lightcyan;
+    font-weight: 400;
+    font-family: "Open Sans", sans-serif;
+
+}
+
+.silder {
+    background-image: url(pexels-lucasmenesesphoto-21855043.jpg);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+    overflow: hidden;
+}
+
+.silderWrapper {
+    display: flex;
+    width: 500vw;
+    transition: all .5s ease-in-out;
+}
+
+.silderItem {
+    position: relative;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.silderBg {
+    width: 750px;
+    height: 750px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: aquamarine;
+
+}
+.silderImg{
+    z-index: 1;
+    
+}
+
+
+.silderTitle {
+    position: absolute;
+    top: 10%;
+    right: 15%;
+    color:black;
+    font-size: 50px;
+    font-weight: 500;
+    z-index: 1;
+
+}
+
+
+.silderPrice {
+    position: absolute;
+    top: 10%;
+    right: 80%;
+    font: size 60px;
+    text-align: center;
+    color: rgb(13, 21, 21);
+    border: 1px solid gray;
+    z-index: 1;
+}
+
+.buyButton {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    font: size 60px;
+    text-align: center;
+    color: rgb(13, 21, 21);
+    border: 1px solid gray;
+    z-index: 1;
+    cursor: pointer;
+}
